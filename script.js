@@ -9,7 +9,7 @@ function stringChop(str, size) {
 		return arr;
 	}
 
-	for (let i = 0; i < str.length; i++){
+	for (let i = 0; i < str.length; i += size){
 		arr.push(str.slice(i, i + size));
 	}
 
